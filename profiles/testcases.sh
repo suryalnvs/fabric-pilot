@@ -10,8 +10,7 @@ echo "##########################"
 echo "STARTING THE PTE CONTAINER"
 echo "##########################"
 PREFIX="result"
-cd $GOPATH/src/github.com/hyperledger/fabric-test
-git submodule foreach git pull origin master
+
 cd $GOPATH/src/github.com/hyperledger/fabric-test/fabric-sdk-node
 npm install
 npm install singly-linked-list
